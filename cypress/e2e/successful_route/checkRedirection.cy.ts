@@ -1,10 +1,10 @@
 
-describe('Visit website', () => {
+describe('Visit website and check redirection', () => {
     before(() => {
       cy.login()
     })
 
-    it('Visit website and check redirection', ()=> {
+    it('Check redirection', ()=> {
       cy.clickFinanceESGButton();
       cy.clickESGKpiButton();
 

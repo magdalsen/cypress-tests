@@ -13,3 +13,7 @@ Cypress.Commands.add('clickFinanceESGButton', () => {
 Cypress.Commands.add('clickESGKpiButton', () => {
     cy.get('.sub-menu.nav-dropdown .ux-menu-link__link.flex > span').contains(' ESG KPI Engine ').click({ force: true });
 })
+
+Cypress.Commands.add('returnGetInTouchBtn', () => {
+    cy.get('.header-nav-main.nav.nav-right > .html.header-button-1 .button.primary')
+})

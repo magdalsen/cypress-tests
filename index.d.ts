@@ -15,3 +15,9 @@ declare namespace Cypress {
         clickESGKpiButton(): Chainable<void>
     }
 }
+
+declare namespace Cypress {
+    interface Chainable {
+        returnGetInTouchBtn(): Chainable<void>
+    }
+}
