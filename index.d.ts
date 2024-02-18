@@ -4,6 +4,28 @@ declare namespace Cypress {
     }
 }
 
+// Return statements
+
+declare namespace Cypress {
+    interface Chainable {
+        financeESGButton(): string
+    }
+}
+
+declare namespace Cypress {
+    interface Chainable {
+        ESGKpiButton(): string
+    }
+}
+
+declare namespace Cypress {
+    interface Chainable {
+        getInTouchButton(): string
+    }
+}
+
+// Buttons
+
 declare namespace Cypress {
     interface Chainable {
         clickFinanceESGButton(): Chainable<void>
