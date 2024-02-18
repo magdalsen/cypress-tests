@@ -20,6 +20,9 @@ or
 ```bash
 npx cypress run
 ```
+### Report example
+
+![alt text](image.png)
 
 ## Technology
 
