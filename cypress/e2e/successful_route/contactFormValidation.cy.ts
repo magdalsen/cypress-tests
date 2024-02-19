@@ -18,7 +18,7 @@ describe('Visit website and check email validation', () => {
       }
 
     it('Email validation', ()=> {
-        cy.returnGetInTouchBtn().click();
+        cy.getInTouchBtn().click();
         cy.url().should('eq', Cypress.env('CONTACT_URL'));
         getIframeBody().find('.hs_email .input input').type(Cypress.env('badEmailData'));
         getIframeBody().find('.hs_email ul.hs-error-msgs label').should('contain', 'Email must be formatted correctly.');

@@ -6,28 +6,28 @@ Cypress.Commands.add('login', () => {
 
 // Return statements
 
-const financeESGButton = () => {
+const getFinanceESGButton = () => {
     return '.header-nav-main.nav.nav-right > li > a';
 }
 
-const ESGKpiButton = () => {
+const getESGKpiButton = () => {
     return '.sub-menu.nav-dropdown .ux-menu-link__link.flex > span';
 }
 
-const getInTouchButton = () => {
-    return '.header-nav-main.nav.nav-right > .html.header-button-1 .button.primary'
+const getGetInTouchButton = () => {
+    return '.header-nav-main.nav.nav-right > .html.header-button-1 .button.primary';
 }
 
 // Buttons
 
-Cypress.Commands.add('clickFinanceESGButton', () => {
-    cy.get(financeESGButton()).contains('Finance & ESG').click();
+Cypress.Commands.add('financeESGButton', () => {
+    cy.get(getFinanceESGButton()).contains('Finance & ESG');
 })
 
-Cypress.Commands.add('clickESGKpiButton', () => {
-    cy.get(ESGKpiButton()).contains(' ESG KPI Engine ').click({ force: true });
+Cypress.Commands.add('esgKpiButton', () => {
+    cy.get(getESGKpiButton()).contains(' ESG KPI Engine ');
 })
 
-Cypress.Commands.add('returnGetInTouchBtn', () => {
-    cy.get(getInTouchButton())
+Cypress.Commands.add('getInTouchBtn', () => {
+    cy.get(getGetInTouchButton());
 })

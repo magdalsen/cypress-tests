@@ -8,19 +8,19 @@ declare namespace Cypress {
 
 declare namespace Cypress {
     interface Chainable {
-        financeESGButton(): string
+        getFinanceESGButton(): string
     }
 }
 
 declare namespace Cypress {
     interface Chainable {
-        ESGKpiButton(): string
+        getESGKpiButton(): string
     }
 }
 
 declare namespace Cypress {
     interface Chainable {
-        getInTouchButton(): string
+        getGetInTouchButton(): string
     }
 }
 
@@ -28,18 +28,18 @@ declare namespace Cypress {
 
 declare namespace Cypress {
     interface Chainable {
-        clickFinanceESGButton(): Chainable<void>
+        financeESGButton(): Chainable<void>
     }
 }
 
 declare namespace Cypress {
     interface Chainable {
-        clickESGKpiButton(): Chainable<void>
+        esgKpiButton(): Chainable<void>
     }
 }
 
 declare namespace Cypress {
     interface Chainable {
-        returnGetInTouchBtn(): Chainable<void>
+        getInTouchBtn(): Chainable<void>
     }
 }
